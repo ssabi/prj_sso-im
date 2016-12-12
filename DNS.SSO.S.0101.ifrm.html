@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>로그인 페이지</title>
+
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+<script type="text/javascript" src="resource/js/libs/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="resource/js/libs/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="resource/js/plugins/selectordie.min.js"></script>
+<script type="text/javascript" src="resource/js/common.js"></script>
+</head>
+<body>
+<div class="login_frm">
+	<div class="login_inst">
+		<div class="inner">
+			<form action="DNS.SSO.S.0105.ifrm.html" method="post">
+				<fieldset>
+					<legend>로그인폼</legend>
+
+					<div>
+						<input type="text" placeholder="아이디" />
+					</div><!-- //아이디 -->
+
+					<div>
+						<input type="password" placeholder="비밀번호" />
+						<div class="tooltip">
+							<p>&lt;Caps Lock&gt;이 켜져있습니다</p>
+						</div>
+					</div><!-- //비밀번호 -->
+
+					<p class="chkbox"><input type="checkbox" name="" id="save_id" /><label for="save_id">아이디 저장</label></p>
+
+					<div class="btn_box">
+						<input type="submit" class="submit" value="확인" />
+						<!-- 
+						<a href="#" class="submit">확인</a>
+						 -->
+					 </div>
+				</fieldset>
+			</form>
+		</div>
+	</div><!-- // -->
+
+	<div class="login_desc">
+		<div class="inner">
+			<ul class="login_ext">
+				<li class="ld_icon01"><a href="#"><span>아이디 찾기</span></a></li>
+				<li class="ld_icon02"><a href="#"><span>비밀번호 초기화</span></a></li>
+				<li class="ld_icon03"><a href="#"><span>비밀번호 변경</span></a></li>
+			</ul>
+			<p class="bul01">정보보안을 위해 비밀번호는 주기적(1개월)으로 변경하여 주시기 바랍니다</p>
+		</div>
+	</div><!-- // -->
+</div>
+</body>
+</html>

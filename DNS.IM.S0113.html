@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>ID 잠김해지 요청</title>
+
+<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+<script type="text/javascript" src="resource/js/libs/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="resource/js/libs/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="resource/js/plugins/selectordie.min.js"></script>
+<script type="text/javascript" src="resource/js/common.js"></script>
+</head>
+<body>
+<!-- //Popup size : 680 x  -->
+<div id="pop_wrap">
+	<div id="pop_header">
+		<strong>ID 잠김해지 요청</strong>
+		<a href="#" class="close">닫기</a>
+	</div><!-- /p_header -->
+
+	<div id="pop_container">
+		<form action="#" method="post">
+			<div class="tbl_wrap">
+				<table class="tbl">
+					<caption>ID 잠김해지 요청 폼</caption>
+					<tbody>
+					<tr>
+						<th scope="row">요청 항목</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">요청 항목</span>
+							<!-- //Mobile Title -->
+							ID 잠김해지 요청
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">ID</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">ID</span>
+							<!-- //Mobile Title -->
+							<div class="ele_wrap"><input type="text" /></div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="vt">확인 방법</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">확인 방법</span>
+							<!-- //Mobile Title -->
+							<input type="radio" name="idt" id="d01" checked="checked" /><label for="d01">SMS 받기</label>
+							<input type="radio" name="idt" id="d02" /><label for="d02">e-Mail 받기</label>
+							<input type="radio" name="idt" id="d03" /><label for="d03">SMS, e-Mail 함께 받기</label>
+							<p>회원 가입 시 등록해 주신 e-Mail이나 핸드폰 번호로 ID를 발송해드립니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="vt">사용자 유형</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">사용자 유형</span>
+							<!-- //Mobile Title -->
+							<input type="radio" name="user" id="u01" checked="checked" class="user" data-user='{"show":".inside", "hide":".outside"}' /><label for="u01">내부직원</label>
+							<input type="radio" name="user" id="u02" class="user" data-user='{"show":".outside", "hide":".inside"}' /><label for="u02">외부직원</label>
+							<p>내부직원 : SKT 정직원 및 계약직, 외부직원 : 그 외 사용자</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이름</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">이름</span>
+							<!-- //Mobile Title -->
+							<div class="ele_wrap"><input type="text" /></div>
+						</td>
+					</tr>
+					<tr class="inside">
+						<th scope="row">사원번호</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">사원번호</span>
+							<!-- //Mobile Title -->
+							<div class="ele_wrap"><input type="text" /></div>
+						</td>
+					</tr>
+					<tr class="outside">
+						<th scope="row">생년월일</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">생년월일</span>
+							<!-- //Mobile Title -->
+							<div class="ele_wrap"><input type="text" placeholder="ex 19801225" /></div>
+						</td>
+					</tr>
+					<tr class="outside">
+						<th scope="row" class="vt">추가 정보</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">추가 정보</span>
+							<!-- //Mobile Title -->
+							<input type="radio" name="info" id="a01" class="add_info" data-type='{"show":".email_type", "hide":".tel_type"}' checked="checked" /><label for="a01">이메일</label>
+							<input type="radio" name="info" id="a02" class="add_info" data-type='{"show":".tel_type", "hide":".email_type"}' /><label for="a02">휴대폰</label>
+							<div class="email_type">
+								<div><div><input type="text" /></div></div>
+								<span class="sep">@</span>
+								<div><div><input type="text" /></div></div>
+							</div>
+							<div class="tel_type">
+								<select class="tel">
+									<option>010</option>
+									<option>011</option>
+									<option>016</option>
+									<option>017</option>
+								</select>
+								<span class="sep">-</span>
+								<div><div><input type="text" /></div></div>
+								<span class="sep">-</span>
+								<div><div><input type="text" /></div></div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row" class="vt">고객 사유</th>
+						<td>
+							<!-- Mobile Title -->
+							<span class="mtit">고객 사유</span>
+							<!-- //Mobile Title -->
+							<div class="ele_wrap"><textarea name="" id="" cols="30" rows="10"></textarea></div>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>
+
+		<div class="btnbox">
+			<a href="#" class="btn confirm">확인</a>
+			<a href="#" class="btn cancel">취소</a>
+		</div><!-- /Button -->
+	</div><!-- /p_container -->
+</div><!-- /p_wrap -->
+</body>
+</html>
